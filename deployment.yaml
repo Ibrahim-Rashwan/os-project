@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: os-project-deployment
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      tag: os-project
+
+  template:
+    metadata:
+      name: os-project-image
+      labels:
+        tag: os-project
+    spec:
+      containers:
+        - name: main
+          image: os-project-image

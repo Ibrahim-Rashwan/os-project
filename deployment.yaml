@@ -11,10 +11,10 @@ spec:
 
   template:
     metadata:
-      name: os-project-image
+      name: os-project-pod
       labels:
         tag: os-project
     spec:
       containers:
         - name: main
-          image: os-project-image
+          image: ibrahim9150/os-project-image

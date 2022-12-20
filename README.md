@@ -11,6 +11,9 @@ The service listening to nodePort: 4200 so when the service reveives an EXTERNAL
 
 Useful info:
     
+    docker hub image:
+        https://hub.docker.com/repository/docker/ibrahim9150/os-project-image
+        
     nginx.conf listen port: 4200    
     pod containerPort: 4200
     service nodePort: 30003

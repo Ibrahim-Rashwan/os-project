@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: os-project-pod
+  labels:
+    tag: os-project
+spec:
+  #hostNetwork: true
+  containers:
+    - name: os-project-container
+      image: ibrahim9150/os-project-image
+      imagePullPolicy: IfNotPresent
+      ports:
+      - containerPort: 4200

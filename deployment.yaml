@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: os-project-deployment
+  labels:
+    tag: os-project
 spec:
   replicas: 3
 
@@ -15,6 +17,10 @@ spec:
       labels:
         tag: os-project
     spec:
+      #hostNetwork: true
       containers:
-        - name: main
+        - name: os-project-container
           image: ibrahim9150/os-project-image
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 4200

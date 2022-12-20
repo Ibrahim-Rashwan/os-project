@@ -13,7 +13,7 @@ Useful info:
     
     nginx.conf listen port: 4200    
     pod containerPort: 4200
-    service nodePort: 4200
+    service nodePort: 30003
     
     pod label(s):
         tag: os-project
